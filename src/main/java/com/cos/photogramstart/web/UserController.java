@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-import com.cos.photogramstart.config.PrincipalDetails;
+import com.cos.photogramstart.config.auth.PrincipalDetails;
 
 @Controller
 public class UserController {

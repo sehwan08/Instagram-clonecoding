@@ -1,4 +1,4 @@
-package com.cos.photogramstart.config;
+package com.cos.photogramstart.config.auth;
 
 import java.util.ArrayList;
 import java.util.Collection;

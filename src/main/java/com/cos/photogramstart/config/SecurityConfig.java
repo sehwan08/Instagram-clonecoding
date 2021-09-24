@@ -20,7 +20,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable();
 		http.authorizeRequests()
-		.antMatchers("/","/user/**","/image/**","/subscribe/**","/comment/**")
+		.antMatchers("/","/user/**","/image/**","/subscribe/**","/comment/**","/api/**")
 		.authenticated() //.antMatchers 안의 요청 주소는 인증 요청 
 		.anyRequest().permitAll()
 		.and() // 인증 페이지 요청이면 아래 로긴 페이지로 이동 
