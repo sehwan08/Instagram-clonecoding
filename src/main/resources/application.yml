@@ -37,4 +37,5 @@ spring:
       password: 1234   
 
 file:
-  path: C:/workspace/springbootwork/upload/
+  path: C:/devtools/workspace/Springboot/upload/
+  
