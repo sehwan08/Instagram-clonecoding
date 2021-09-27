@@ -43,3 +43,10 @@ public class Image {
 		this.createDate = LocalDateTime.now();
 	}
 }
+
+
+//오브젝트를 콘솔에 출력할때 무한 참조를 해결 할 수 있음 
+//@Override
+//public String toString() {
+//	return "Image [id=" + id + ", caption=" + caption + ", postImageUrl=" + postImageUrl + ", createDate=" + createDate + "]";
+//}
