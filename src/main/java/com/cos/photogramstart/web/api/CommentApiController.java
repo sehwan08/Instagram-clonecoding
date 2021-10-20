@@ -37,15 +37,6 @@ public class CommentApiController {
 	@PostMapping("/api/comment")
 	public ResponseEntity<?> inserComment(@Valid @RequestBody CommentDto commentDto,
 			BindingResult bindingResult, @AuthenticationPrincipal PrincipalDetails principalDetails){
-		//System.out.println(commentDto);
-		if(bindingResult.hasErrors()) {
-			Map<String, String> errorMap = new HashMap<>();
-			for (FieldError error : bindingResult.getFieldErrors()) {
-				errorMap.put(error.getField(), error.getDefaultMessage());
-			}
-			throw new CustomValidationApiException("Failed", errorMap);
-		}
-		
 		Comment comment = commentService.insertCommnet(commentDto.getContent(), commentDto.getImageId(), principalDetails.getUser().getId());
 		return new ResponseEntity<>(new CMRespDto<>(1, "Success", comment), HttpStatus.CREATED);
 	}
