@@ -41,14 +41,15 @@
                         
                         <!-- Oauth 소셜로그인 -->
                         <div class="login__facebook">
-                            <button>
+                            <button onclick="javascript:location.href='/oauth2/authorization/facebook'">
                                 <i class="fab fa-facebook-square"></i>
                                 <span>Facebook으로 로그인</span>
                             </button>
                         </div>
                         <!-- Oauth 소셜로그인end -->
+                        
+                        
                     </div>
-                    
                     <!--계정이 없으신가요?-->
                     <div class="login__register">
                         <span>계정이 없으신가요?</span>
